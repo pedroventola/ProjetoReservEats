@@ -8,7 +8,7 @@ package controles;
 
 /**
  *
- * @author Pedro Ventola & Gabriel Gama
+ * @author Pedro Ventola
  */
 public class Consumidor {   
     //atributos

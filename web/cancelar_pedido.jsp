@@ -1,7 +1,7 @@
 <%-- 
     Document   : cancelar_pedido
     Created on : 16 de jun. de 2023
-    Author     : Pedro Ventola e Gabriel Gama
+    Author     : Pedro Ventola 
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.text.*" import="java.lang.*" import="java.sql.*" import="java.util.Date"%>
