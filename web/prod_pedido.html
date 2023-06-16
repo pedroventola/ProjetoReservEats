@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+@author Gabriel Gama
+-->
+<html>
+    <head>
+        <title>Faça já seu pedido!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+          <h1>Pedido de Comida</h1>
+  
+    <form name="frmProdPed" method="post" action="prod_pedido.jsp">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+    
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereço" name="endereço" required><br><br>
+    
+    <label for="bairro">Bairro:</label>
+    <select id="bairro" name="bairro">
+      <option value="Jardim Maricá">Jardim Maricá</option>
+      <option value="Novo Guigas">Novo Guigas</option>
+      <option value="Motta">Motta</option>
+      <option value="Conidemos">Conidemos</option>
+    </select><br><br>
+    
+    <label for="comida">Comida:</label>
+    <select id="comida" name="comida">
+      <option value="pizza">Pizza</option>
+      <option value="hamburguer">Hambúrguer</option>
+      <option value="sushi">Sushi</option>
+      <option value="panqueca">Panqueca</option>
+    </select><br><br>
+    
+    <label for="observacoes">Observações:</label><br>
+    <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Fazer Pedido">
+  </form>
+</body>
+</html>

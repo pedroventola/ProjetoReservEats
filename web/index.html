@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+@author: Gabriel Victor da Gama e Pedro Ventola
+-->
+<html>
+    <head>
+        <title>ReservEats</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-25..200"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">        
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+            body {background-color: #313233;
+                  font-family: 'Roboto', sans-serif;}
+            h1 { color: black;}
+            h2 { color: darkgray;}
+            
+            .image-container { /*Alinha a imagem ao centrol*/
+            text-align: center;}
+            .logo-image {
+            max-width: 200px; /* Define a largura máxima desejada */
+            height: auto; }
+        </style>
+    </head>
+    <body>
+        <div class="image-container">
+        <img src="image/logo.png" alt="" align="center" class="logo-image"/>
+        </div>
+        <h1>Faça aqui seu pedido!</h1> 
+        <span class="material-symbols-outlined">lunch_dining</span>
+        <button onclick="document.location='prod_pedido.html'">Peça aqui</button>
+        <br>      
+        <span class="material-symbols-outlined">two_wheeler</span>
+        <button onclick="document.location='prod_cons_ped.html'">Cadê meu pedido?</button>
+        <br> 
+        <span class="material-symbols-outlined">cancel</span>
+        <button onclick="document.location='prod_del_ped.jsp'">Cancelar</button>
+        <br>         
+        <span class="material-symbols-outlined">search</span>
+        <button onclick="document.location='prod_cad_consu.html'">Consultar dados</button>
+        <br> 
+    </body>
+</html>
