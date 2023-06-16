@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+@author: Gabriel Victor da Gama e Pedro Ventola
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>ReservEats</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-25..200"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">       
+        <style>
+            .material-symbols-outlined {
+                color: #00A87A;
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+                
+            }
+            
+            header { /*estilização do cabeçalho*/
+                background-color:#FFFFFF;
+                color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            
+            body {background-color: #E0DDD7;
+                  font-family: 'PT Sans', sans-serif;}
+            
+            h1 { color: black;}
+            h2 { color: black;}
+            
+            .image-container { /*Alinha a imagem ao centrol*/
+            text-align: center;}
+            .logo-image {
+            max-width: 200px; /* Define a largura máxima desejada */
+            height: auto; }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+        <div class="image-container">
+        <img src="image/logo.png" alt="" align="center" class="logo-image"/>
+        </div>
+        </header>
+        <h1>Faça aqui seu pedido!</h1> 
+        <span class="material-symbols-outlined">lunch_dining</span>
+        <button onclick="document.location='prod_pedido.html'">Peça aqui</button>
+        <br>      
+        <span class="material-symbols-outlined">two_wheeler</span>
+        <button onclick="document.location='prod_cons_ped.html'">Cadê meu pedido?</button>
+        <br> 
+        <span class="material-symbols-outlined">cancel</span>
+        <button onclick="document.location='cancelar_pedido.html'">Cancelar</button>
+        <br>         
+        <span class="material-symbols-outlined">search</span>
+        <button onclick="document.location='prod_cad_consu.html'">Consultar dados</button>
+        <br> 
+        <h2> Se for novo, faça seu cadastro aqui!</h2>
+        <span class="material-symbols-outlined">person_add</span>
+        <button onclick="document.location='cadastro_consumidor.html'">Se cadastre</button>
+        <br> 
     </body>
 </html>
