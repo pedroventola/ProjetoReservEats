@@ -11,9 +11,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
         <title>Faça já seu pedido!</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
+        
+        <style>
+             body {background-color: #E0DDD7;
+                  font-family: 'PT Sans', sans-serif;}
+        </style> 
     </head>
     <body>
-        <h1>PPedido de Comida</h1>
+        <h1>Pedido de Comida</h1>
         <%
             /*-- Entrada --*/
             String nome = request.getParameter("nome_ped");
@@ -45,8 +51,8 @@
                 
                 /*-- "INSERT INTO pedido(nome, endereco, bairro, comida, observacoes) VALUES ('Agnaldo', 'Rua Militones', 'Motta', 'Pizza', 'Sem picles')" --*/
                 String sql = "INSERT INTO pedido(nome, endereco, bairro, comida, observacoes) VALUES ('" + 
-                                                    ped.getNome() + "', " + ped.getEnd() + ", '" +  ped.getBairro() + ", '" + ped.getComida() +
-                                                    ", '" + ped.getObs() + "')";
+                                                    ped.getNome() + "', " + ped.getEnd() + "', '" +  ped.getBairro() + ", '" + ped.getComida() +
+                                                    "', '" + ped.getObs() + "')";
                 
                 /*-- out.println("<br> <br>SQL: " + sql); --*/
                 stmt.executeUpdate(sql);
