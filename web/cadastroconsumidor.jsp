@@ -13,6 +13,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
         <title>Cadastro de Consumidor</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
+        
+        <style>
+             body {background-color: #E0DDD7;
+                  font-family: 'PT Sans', sans-serif;}
+        </style> 
     </head>
     <body>
         <h1>Consumidores</h1>
@@ -40,14 +46,13 @@
 
                 Statement stmt = conexao.createStatement(); // Criar uma instrução com base na conexão. 
                 
-                /*-- "INSERT INTO pedido(nome, cpf, telefone, endereco) VALUES ('Agnaldo', '12345678912', '1199999999', 'Rua Macambira, 66')" --*/
-                String sql = "INSERT INTO consumidor(nome, cpf, telefone, endereco VALUES ('" + 
-                                                    cons.getNome() + "', " + cons.getCpf() + ", '" +  cons.getTelefone() + ", '" + cons.getEndereco() + "')"; 
+                /*-- "INSERT INTO consumidor(nome, cpf, telefone, endereco) VALUES ('Agnaldo', '12345678912', '1199999999', 'Rua Macambira, 66')" --*/
+                String sql = "INSERT INTO consumidor(nome, cpf, telefone, endereco) VALUES ('" + cons.getNome() + "', " + cons.getCpf() + ", '" +  cons.getTelefone() + "', '" + cons.getEndereco() + "')"; 
            
            stmt.executeUpdate(sql);
                 stmt.close();
                 
-                out.println("<br> Cadastro feito com sucesso!");
+                out.println("<br><br> <b>Cadastro feito com sucesso! </b>");
             } catch (Exception ex) {
                 out.println("<br> Erro:" + ex);
             }
