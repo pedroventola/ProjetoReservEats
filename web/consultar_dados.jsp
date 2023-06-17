@@ -38,7 +38,7 @@
                 
                 ResultSet rs = stmt.executeQuery(sql);
                 while (rs.next()) {
-                    out.println("<br><br> Dados(s): " + rs.getRow());
+                    out.println("<br> Dados(s): " + rs.getRow());
                     out.println("<br> Nome: " + rs.getString("nome"));
                     out.println("<br> CPF: " + rs.getString("cpf"));
                     out.println("<br> Telefone: " + rs.getString("telefone"));
