@@ -21,6 +21,8 @@
     <body>
         <h1>Cancele seu Pedido!</h1>
         <%
+            request.setCharacterEncoding("UTF-8");  // Muda o Encoding para UTF-8 na requisição.
+            
             /*-- Entrada --*/
             String cod = request.getParameter("cod"); //Recebendo do .html
 
