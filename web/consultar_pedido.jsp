@@ -15,14 +15,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
         <title>Consulta de pedido</title>
-            <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-
-    </style>
+        <!-- Estilização -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
+        <style>
+             body {background-color: #E0DDD7;
+                  font-family: 'PT Sans', sans-serif;}
+        </style>
     </head>
       <body>
         <h1>Consulta de pedido:</h1>
