@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+Author: Gabriel Victor da Gama
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<head>
+    <title>Consulta de Pedidos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulte seu pedido</h1>
+    <form name="frmConsultarPedido" method="post" action="consultar_pedido.jsp">
+        <label for="cod">Código de pedido:</label>
+        <input type="text" id="cod" name="cod">
+        <p>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Consultar" name="cons">
+        <p>
+    </form>
+</body>
 </html>
