@@ -45,6 +45,7 @@
                     out.println("<br> CPF: " + rs.getString("cpf"));
                     out.println("<br> Telefone: " + rs.getString("telefone"));
                     out.println("<br> Endereço..: " + rs.getString("endereco"));
+                    out.println("<br> Email..: " + rs.getString("email"));
                     
                     
                 }                          

@@ -28,8 +28,9 @@
         String cpf = request.getParameter("cpf");
         String telefone = request.getParameter("telefone");
         String endereco = request.getParameter("endereco");
+        String email = request.getParameter("email");
         
-        Consumidor cons = new Consumidor (nome, cpf, telefone, endereco);
+        Consumidor cons = new Consumidor (nome, cpf, telefone, endereco, email);
         
         /*-- Saída --*/
         out.println("<b>Registro do Consumidor</b>");
@@ -37,6 +38,7 @@
         out.println("<br> CPF.......: " + cons.getCpf());
         out.println("<br> Telefone..: " + cons.getTelefone());
         out.println("<br> Endereço..: " + cons.getEndereco());
+        out.println("<br> Email..: " + cons.getEmail());
          
 
          try{
@@ -46,8 +48,8 @@
 
                 Statement stmt = conexao.createStatement(); // Criar uma instrução com base na conexão. 
                 
-                /*-- "INSERT INTO consumidor(nome, cpf, telefone, endereco) VALUES ('Agnaldo', '12345678912', '1199999999', 'Rua Macambira, 66')" --*/
-                String sql = "INSERT INTO consumidor(nome, cpf, telefone, endereco) VALUES ('" + cons.getNome() + "', " + cons.getCpf() + ", '" +  cons.getTelefone() + "', '" + cons.getEndereco() + "')"; 
+                /*-- "INSERT INTO consumidor(nome, cpf, telefone, endereco, email) VALUES ('Agnaldo', '12345678912', '1199999999', 'Rua Macambira, 66', 'ag123@hotmail.com')" --*/
+                String sql = "INSERT INTO consumidor(nome, cpf, telefone, endereco) VALUES ('" + cons.getNome() + "', " + cons.getCpf() + ", '" +  cons.getTelefone() + "', '" + cons.getEndereco() + "', '" + cons.getEmail() + "')"; 
            
            stmt.executeUpdate(sql);
                 stmt.close();
