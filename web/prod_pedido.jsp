@@ -51,8 +51,8 @@
                 
                 /*-- "INSERT INTO pedido(nome, endereco, bairro, comida, observacoes) VALUES ('Agnaldo', 'Rua Militones', 'Motta', 'Pizza', 'Sem picles')" --*/
                 String sql = "INSERT INTO pedido(nome, endereco, bairro, comida, observacoes) VALUES ('" + 
-                                                    ped.getNome() + "', " + ped.getEnd() + "', '" +  ped.getBairro() + ", '" + ped.getComida() +
-                                                    "', '" + ped.getObs() + "')";
+                ped.getNome() + "', '" + ped.getEnd() + "', '" +  ped.getBairro() + "', '" + ped.getComida() +
+                "', '" + ped.getObs() + "')";
                 
                 /*-- out.println("<br> <br>SQL: " + sql); --*/
                 stmt.executeUpdate(sql);
