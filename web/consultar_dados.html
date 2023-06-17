@@ -1,6 +1,3 @@
-<!--
-@author: Pedro Ventola
--->
 <!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -8,28 +5,24 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>Cadastrar o Consumidor</title>
+        <title>Consulta de Dados</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <!-- Estilização -->
+        <!-- Estilização -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
         <style>
              body {background-color: #E0DDD7;
                   font-family: 'PT Sans', sans-serif;}
-        </style> 
+        </style>
     </head>
     <body>
-        <h1>Cadastro</h1>
-        
-        <form name="frmCadCon" method="post" action="cadastro_consumidor.jsp">
-            Nome: <input type="text" name="nome"> <p>
-            CPF:  <input type="text" name="cpf"> <p>
-            Telefone: <input type="text" name="telefone"> <p>
-            Endereço: <input type="text" name="endereco"> <p>
-            <br><br>
+        <h1>Consultar seus Dados]</h1>
+        <br>
+        <form name="frmConsDados" method="post" action="consultar_dados.jsp">
+            <h3> Insira seu CPF </h3>
+            CPF: <input type="text" name="cpf"> <p>              
             <input type="reset" value="Limpar">
-            <input type="submit" value="Salvar" name="salvar"> <p>                   
+            <input type="submit" value="Consultar" name="consultar"> <p>                   
         </form>
-        
     </body>
 </html>

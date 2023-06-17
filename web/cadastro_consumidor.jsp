@@ -13,12 +13,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
         <title>Cadastro de Consumidor</title>
+         <!-- Estilização -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
-        
         <style>
              body {background-color: #E0DDD7;
                   font-family: 'PT Sans', sans-serif;}
-        </style> 
+        </style>
     </head>
     <body>
         <h1>Consumidores</h1>
